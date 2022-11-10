@@ -15,40 +15,66 @@
     }
     body {
         margin: 0;
-        background-color: #d7d5d5;
-        color: rgb(255, 255, 255);
+        background-color: #000000;
+        color: #ffffff;
         font-family: "Mukta"; 
     }
-    
     #header {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-family: "Lobster";
         letter-spacing: 6px;
+        animation: first_color .5s
+        ease-in-out infinite alternate;
+    }
+    @keyframes first_color {
+        0% {
+            text-shadow: 0 0 10px #ffffff,
+            0 0 20px #ffffff, 0 0 30px #ffffff
+        }
+        100% {
+            text-shadow: 0 0 5px #ffffff,
+            0 0 10px #ffffff, 0 0 15px #ffffff
+        }
     } 
     #main-content {
         flex: 6;
-        background: #ffffff;
-        color: rgb(134, 134, 134);
+        background: #000000;
+        color: rgb(255, 255, 255);
         padding: 10px 20px 10px 20px;
     }
-
+    #main-content h2{
+        flex: 6;
+        background: #000000;
+        color: rgb(255, 255, 255);
+        padding: 10px 5px 10px 5px;
+        animation: first_color .5s
+        ease-in-out infinite alternate;
+    }
+    @keyframes first_color {
+        0% {
+            text-shadow: 0 0 10px #ffffff,
+            0 0 20px #ffffff, 0 0 30px #ffffff
+        }
+        100% {
+            text-shadow: 0 0 5px #ffffff,
+            0 0 10px #ffffff, 0 0 15px #ffffff
+        }
+    }
     .main-content--img {
-        width: 20%;
-        border-radius: 10px;
-        padding: 30px 30px 30px 30px;
+        width: 300px;
+        padding: 0px 0px 8px 8px;
     }
 </style>
-
     <header id="header">
-        <h1>Viaje al espacio</h1>
+        <h1>Viaje al espacio 🚀 </h1>
     </header>
     <section id="main-content">
-        <img src="https://scontent.fpbc2-2.fna.fbcdn.net/v/t39.30808-6/286388561_407216521323984_1277253031168672432_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeHtj-nIVDwjiwgbQzz3h_8EUkAEDkmJ5sRSQAQOSYnmxHBN92ORAPQlWhtcK4XGlS3PSxVQW3Se08YrRwRagTgw&_nc_ohc=56tmxnR39FgAX9KLO6B&_nc_ht=scontent.fpbc2-2.fna&oh=00_AfAYAJeYmLm23SAvSCD2xD74a4Q-wMzqeOX5W3O_BYdecQ&oe=636430EB" alt="Katya Echazarreta" class="main-content--img">
-        <img src="https://scontent.fpbc2-1.fna.fbcdn.net/v/t39.30808-6/285848266_407216517990651_6155568146569174823_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeH5P62bCXRFJ0qHboIm1U8UWNQ8ra0N5fFY1DytrQ3l8XiUuPz19D4gSGISPemRBO5y8au9J3XzQkieIKs0X0-K&_nc_ohc=2oVrN3OsilgAX9BzZcV&_nc_ht=scontent.fpbc2-1.fna&oh=00_AfDax8jOu0gqQ9K51CY9b1ws1Zu40uGphDF96Ljs-W7xjg&oe=636349F3" alt="Katya Echazarreta" class="main-content--img">
-        <img src="https://scontent.fpbc2-4.fna.fbcdn.net/v/t39.30808-6/283152259_396836469028656_7708314234755514924_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeHsDhYrSTDHwymCvzcQXzQ2VpdWKB9DgGVWl1YoH0OAZct0gkZEYoSj5-k89-Z-jRM8OXPXzx7NAIvjvtppsk7K&_nc_ohc=r5rmKtPbYWEAX8mxcW3&_nc_ht=scontent.fpbc2-4.fna&oh=00_AfCvFgHn2nfUxyvUmoJKm014qXu84ONcBdWFZ9H9DPIjhQ&oe=63630021" alt="Katya Echazarreta" class="main-content--img">
-        <img src="https://scontent.fpbc2-2.fna.fbcdn.net/v/t39.30808-6/283420571_396836465695323_2496851018716981316_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeGsx7dTZ1j9T7bp5oX3-dP4qwFazDMK0gWrAVrMMwrSBUQ1PVqwnh5XTjsWnX0M2SRnb7Bg9PCHzNSvYlwuyW9r&_nc_ohc=ZiaCc2PZvHQAX_xtDTh&_nc_ht=scontent.fpbc2-2.fna&oh=00_AfBBIMGhIT5BCMMBqP2BNWn6Ejcq3dEPFIbcFE4b7-xLlg&oe=63632D68" alt="Katya Echazarreta" class="main-content--img">
+        <img src="https://i.ibb.co/K0f3vbk/image.png" alt="Katya Echazarreta" class="main-content--img">
+        <img src="https://i.ibb.co/RT68hF6/image.png" alt="Katya Echazarreta" class="main-content--img">
+        <img src="https://i.ibb.co/QFgzqZy/image.png" alt=" alt="Katya Echazarreta" class="main-content--img">
+        <img src="https://i.ibb.co/KN53znM/image.png" alt="Katya Echazarreta" class="main-content--img">
         <h2><strong>La primera mujer nacida en México en viajar al espacio</strong></h2>
             
             <p>A bordo del quinto vuelo tripulado de la compañía de transporte aeroespacial, Blue Origin, en la misión NS-21. Fue elegida entre siete mil solicitantes por Space for Humanity, una organización sin fines de lucro que selecciona a líderes de todas partes del mundo para acceder a la experiencia de un vuelo espacial con el objetivo de cambiar su perspectiva sobre el mundo a su regreso. Y para Kat (su nombre de pila en redes sociales), vaya que fue un giro completo. ‘Me ha cambiado la vida, no nada más por el hecho de hacerlo y todo lo que sucedió después, sino también por cómo veo la vida, mi perspectiva en todo, ahora es diferente’, dice al recordar aquel momento.</p>

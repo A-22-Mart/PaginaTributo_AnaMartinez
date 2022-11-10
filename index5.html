@@ -15,28 +15,60 @@
     }
     body {
         margin: 0;
-        background-color: #d7d5d5;
-        color: rgb(255, 255, 255);
+        background-color: #000000;
+        color: #ffffff;
         font-family: "Mukta"; 
     }
-    
     #header {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-family: "Lobster";
         letter-spacing: 6px;
-    } 
+        animation: first_color .5s
+        ease-in-out infinite alternate;
+    }
+    @keyframes first_color {
+        0% {
+            text-shadow: 0 0 10px #ffffff,
+            0 0 20px #ffffff, 0 0 30px #ffffff
+        }
+        100% {
+            text-shadow: 0 0 5px #ffffff,
+            0 0 10px #ffffff, 0 0 15px #ffffff
+        }
+    }
     #main-content {
         flex: 6;
-        background: #ffffff;
-        color: rgb(134, 134, 134);
+        background: #000000;
+        color: rgb(255, 255, 255);
         padding: 10px 20px 10px 20px;
     }
+    #main-content h2{
+        flex: 6;
+        background: #000000;
+        color: rgb(255, 255, 255);
+        padding: 10px 5px 10px 5px;
+        animation: first_color .5s
+        ease-in-out infinite alternate;
+    }
+    @keyframes first_color {
+        0% {
+            text-shadow: 0 0 10px #ffffff,
+            0 0 20px #ffffff, 0 0 30px #ffffff
+        }
+        100% {
+            text-shadow: 0 0 5px #ffffff,
+            0 0 10px #ffffff, 0 0 15px #ffffff
+        }
+    }
+    .main-content--img {
+        width: 250px;
+        padding: 0px 0px 8px 8px;
+    }
 </style>
-
     <header id="header">
-        <h1> Le entregan la llave de la CDMX a Katya Echazarreta</h1>
+        <h1> Le entregan la llave de la CDMX a Katya Echazarreta 🚀 </h1>
     </header>
     <section id="main-content">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/I9r7rlTV5W4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

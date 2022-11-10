@@ -15,41 +15,68 @@
     }
     body {
         margin: 0;
-        background-color: #d7d5d5;
-        color: rgb(255, 255, 255);
+        background-color: #000000;
+        color: #ffffff;
         font-family: "Mukta"; 
     }
-    
     #header {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-family: "Lobster";
         letter-spacing: 6px;
-    } 
+        animation: first_color .5s
+        ease-in-out infinite alternate;
+    }
+    @keyframes first_color {
+        0% {
+            text-shadow: 0 0 10px #ffffff,
+            0 0 20px #ffffff, 0 0 30px #ffffff
+        }
+        100% {
+            text-shadow: 0 0 5px #ffffff,
+            0 0 10px #ffffff, 0 0 15px #ffffff
+        }
+    }
     #main-content {
         flex: 6;
-        background: #ffffff;
-        color: rgb(134, 134, 134);
+        background: #000000;
+        color: rgb(255, 255, 255);
         padding: 10px 20px 10px 20px;
     }
-
+    #main-content h2{
+        flex: 6;
+        background: #000000;
+        color: rgb(255, 255, 255);
+        padding: 10px 5px 10px 5px;
+        animation: first_color .5s
+        ease-in-out infinite alternate;
+    }
+    @keyframes first_color {
+        0% {
+            text-shadow: 0 0 10px #ffffff,
+            0 0 20px #ffffff, 0 0 30px #ffffff
+        }
+        100% {
+            text-shadow: 0 0 5px #ffffff,
+            0 0 10px #ffffff, 0 0 15px #ffffff
+        }
+    }
     .main-content--img {
-        width: 250px;
+        width: 237px;
         padding: 0px 0px 8px 8px;
     }
 </style>
-
     <header id="header">
-        <h1>Vida académica</h1>
+        <h1> Vida académica 🚀 </h1>
     </header>
     <section id="main-content">
         <img src="https://static.independent.co.uk/2022/05/17/16/KatiaEchazarreta.jpg?width=1200" alt="Katya Echazarreta" class="main-content--img">
-        <img src="https://scontent.fpbc2-4.fna.fbcdn.net/v/t39.30808-6/307111663_471463238232645_6035673674598650609_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeGKb5IxXt3NenTVGorAKFM5dmJVxNLrXpx2YlXE0utenCz2gvzkuY-soeEfUuc8iU21bxkOQr58qAoA0regvstH&_nc_ohc=W9e96yGPcy4AX_U1oO7&_nc_ht=scontent.fpbc2-4.fna&oh=00_AfCFfK27A3Ioo2rFHrUjaSSFNizLv1xyXYE66VZo5POrAg&oe=63635336" alt="Katya Echazarreta" class="main-content--img">
+        <img src="https://i.ibb.co/ckpwZZG/image.png" alt="Katya Echazarreta" class="main-content--img">
         <img src="https://www.eluniversal.com.mx/sites/default/files/upload/u253209/katya_blue_origin.jpg" alt="Katya Echazarreta" class="main-content--img">
-        <img src="https://scontent.fpbc2-1.fna.fbcdn.net/v/t39.30808-6/299426158_451635430215426_2813122163869255222_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeEuU6wG_qgd9E_kBV3d0e4pDji1GgxE370OOLUaDETfvXPYOSKei1_2DXO5LOAJlHEJid6oTEXuNu4qgBD1PiLK&_nc_ohc=b5oECfiJ03IAX8sZ4IW&_nc_ht=scontent.fpbc2-1.fna&oh=00_AfDbaq9GI6VDuIKjfBxrURWG6BmYLeKYTMGYJqVjpEVcbg&oe=63634610" alt="Katya Echazarreta" class="main-content--img">
-        <img src="https://scontent.fpbc2-2.fna.fbcdn.net/v/t39.30808-6/307030762_471463234899312_8169980667776377663_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeFks_EtmGiGmhqJ3zG-XR7Nii0neG8QRBuKLSd4bxBEG44UivDVzvG27QDt_NUwj7-csRWBGfGa6Am0M6oFLM3C&_nc_ohc=gFMi0f_tZ58AX_Kg7E6&_nc_ht=scontent.fpbc2-2.fna&oh=00_AfCKa1rz3IMKQR1y3XyPfxLSZ_P_9i7ILUc8Gec9FU7Iww&oe=63645DDD" alt="Katya Echazarreta" class="main-content--img">
-        <h2><strong>Katya Echazarreta</strong></h2>
+        <img src="https://i.ibb.co/M8STCT4/image.png" alt="Katya Echazarreta" class="main-content--img">
+        <img src="https://i.ibb.co/vk7D76n/image.png" alt="Katya Echazarreta" class="main-content--img">
+        <h2><strong>Katya Echazarreta vida escolar en el extranjero</strong></h2>
             
             <p>Es estudiante de la maestría en ingeniería eléctrica e informática en la Universidad Johns Hopkins. Anteriormente, estudió la licenciatura en en ingeniería eléctrica en la Universidad de California en Los Ángeles (UCLA).</p>
             <p>Luego de su graduación realizó una estancia de casi cuatro años en el Laboratorio de Propulsión a Chorro de la NASA que eventualmente se convirtió en una labor de tiempo completo como integrante en cinco misiones en las que se ha desempeñado como ingeniera de pruebas. Su trabajo consistía en diseñar circuitos electrónicos y simulaciones para las computadoras de naves espaciales, eso en términos sencillos; porque lo que verdaderamente la ha llevado a desempeñarlo es una curiosidad que parece ser inagotable. En cada entrevista en la que le han preguntado por qué eligió su carrera, esta cualidad siempre es el origen de cómo ha llegado hasta este punto: ‘Para mí la curiosidad es no tenerle miedo a las preguntas, no tenerle miedo a no saber algo. Eso es lo bonito, puedes investigar y buscar la respuesta, pero siento que mucha gente le tiene miedo a no saber, a que te den un proyecto y no sepas cómo hacerlo, a que te llegue una pregunta y no sepas cómo responderla. Mucha gente lo ve como algo muy negativo y no lo es, es una oportunidad para aprender y hacer algo nuevo’.</p>  

@@ -15,33 +15,60 @@
     }
     body {
         margin: 0;
-        background-color: #d7d5d5;
-        color: rgb(255, 255, 255);
+        background-color: #000000;
+        color: #ffffff;
         font-family: "Mukta"; 
     }
-    
     #header {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-family: "Lobster";
         letter-spacing: 6px;
-    } 
+        animation: first_color .5s
+        ease-in-out infinite alternate;
+    }
+    @keyframes first_color {
+        0% {
+            text-shadow: 0 0 10px #ffffff,
+            0 0 20px #ffffff, 0 0 30px #ffffff
+        }
+        100% {
+            text-shadow: 0 0 5px #ffffff,
+            0 0 10px #ffffff, 0 0 15px #ffffff
+        }
+    }
     #main-content {
         flex: 6;
-        background: #ffffff;
-        color: rgb(134, 134, 134);
+        background: #000000;
+        color: rgb(255, 255, 255);
         padding: 10px 20px 10px 20px;
     }
-
+    #main-content h2{
+        flex: 6;
+        background: #000000;
+        color: rgb(255, 255, 255);
+        padding: 10px 5px 10px 5px;
+        animation: first_color .5s
+        ease-in-out infinite alternate;
+    }
+    @keyframes first_color {
+        0% {
+            text-shadow: 0 0 10px #ffffff,
+            0 0 20px #ffffff, 0 0 30px #ffffff
+        }
+        100% {
+            text-shadow: 0 0 5px #ffffff,
+            0 0 10px #ffffff, 0 0 15px #ffffff
+        }
+    }
     .main-content--img {
-        width: 30%;
-        padding: 20px 20px 20px 20px;
+        width: 300px;
+        padding: 5px 5px 8px 80px;
     }
 </style>
-
     <header id="header">
-        <h1>Participación en  Vogue México</h1>
+        <h1>Participación en  Vogue México 🚀 </h1>
     </header>
     <section id="main-content">
         <img src="https://media.vogue.mx/photos/633f5a68b5fc53bb49480cee/2:3/w_1600,c_limit/katya-echazarreta-portada-vogue-mexico.jpg" alt="Katya Echazarreta" class="main-content--img">
